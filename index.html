@@ -1,0 +1,98 @@
+<!-- 
+  This is the main HTML file for simple static webpage.
+  It describes the structure and content of the page.
+-->
+
+<!DOCTYPE html>
+<!-- 
+  <!DOCTYPE html> tells the browser this is an HTML5 document.
+  It helps the browser render the page correctly.
+-->
+
+<html lang="en">
+<!-- 
+  <html> is the root element of an HTML page.
+  lang="en" means the language is English (useful for accessibility and SEO).
+-->
+
+<head>
+    <!-- 
+      <head> contains metadata (data about the page, not visible content).
+      Things like the title, character encoding, links to CSS, etc.
+    -->
+
+    <meta charset="UTF-8" />
+    <!-- 
+      <meta charset="UTF-8" defines the character encoding.
+      UTF-8 supports most characters in all languages, so it’s the standard choice.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      This meta tag makes the page responsive on mobile devices.
+      width=device-width → use the device screen width.
+      initial-scale=1.0 → initial zoom is 100%.
+    -->
+
+    <title>Simple Static Webpage</title>
+    <!-- 
+      <title> sets the text shown in the browser tab and in search results.
+    -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+      This links the external CSS file.
+      rel="stylesheet" → it’s a stylesheet.
+      href="style.css" → the file is in the same folder as index.html.
+    -->
+</head>
+
+<body>
+    <!-- 
+      <body> contains everything that will be displayed on the page: text, images, etc.
+    -->
+
+    <header>
+        <!-- 
+          <header> typically contains the main title, logo, or navigation.
+          Here we just use it for the page heading.
+        -->
+        <h1>Welcome to Simple Static Webpage</h1>
+        <!-- 
+          <h1> is the main heading (highest level heading).
+          There should usually be only one <h1> per page.
+        -->
+    </header>
+
+    <main>
+        <!-- 
+          <main> wraps the main content of the page.
+          Good for accessibility and structure.
+        -->
+
+        <p>
+            <!-- 
+              <p> defines a paragraph of text.
+            -->
+            Hello! This is my very first website hosted on GitHub 🚀
+        </p>
+
+        <p>
+            I created this using HTML, CSS, Git, and GitHub.
+        </p>
+    </main>
+
+    <footer>
+        <!-- 
+          <footer> is used for content at the bottom of the page:
+          copyright, links, contact info, etc.
+        -->
+        <small>© 2025 Tharittapol</small>
+        <!-- 
+          <small> is generally used for less important text,
+          often for legal/copyright notices.
+        -->
+    </footer>
+</body>
+
+</html>

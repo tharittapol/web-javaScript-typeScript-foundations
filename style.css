@@ -1,0 +1,102 @@
+/* 
+  This file controls how your HTML looks (colors, layout, fonts, spacing).
+*/
+
+/* 
+  The * selector means "apply to ALL elements".
+  We use it to reset some default styles and set a base font.
+*/
+* {
+    box-sizing: border-box; 
+    /* 
+      box-sizing: border-box;
+      Tells the browser to include padding and border 
+      inside the element’s width and height.
+      This makes layout easier and more predictable.
+    */
+    margin: 0;
+    /* Remove default margins from all elements (browsers add some by default). */
+    padding: 0;
+    /* Remove default padding from all elements. */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    /* 
+      Set the default font to the system UI font (clean & modern).
+      Then fall back to common fonts if the first ones are not available.
+    */
+}
+
+/* 
+  Style the <body> element (the whole page background).
+*/
+body {
+    background: #0f172a;
+    /* Dark blue/grey background color. */
+    color: #e5e7eb;
+    /* Light grey text color for good contrast on dark background. */
+
+    min-height: 100vh;
+    /* 
+      100vh = 100% of viewport height.
+      Ensures the body is at least as tall as the screen.
+    */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 
+      Using Flexbox to center content:
+      - display: flex       → turn body into a flex container.
+      - flex-direction: column → stack elements vertically (header, main, footer).
+      - align-items: center → center horizontally.
+      - justify-content: center → center vertically.
+    */
+
+    padding: 2rem;
+    /* Add some space from the edges of the screen (responsive unit). */
+}
+
+/* 
+  Style the <h1> inside the <header>.
+*/
+header h1 {
+    margin-bottom: 1rem;
+    /* Add space below the heading. */
+
+    font-size: 2rem;
+    /* Set heading size (2rem = 2 × base font size). */
+
+    text-align: center;
+    /* Center the heading text horizontally. */
+}
+
+/* 
+  Style the <main> content area.
+*/
+main {
+    max-width: 600px;
+    /* Limit the width for better readability on large screens. */
+
+    text-align: center;
+    /* Center-align the text inside the main area. */
+
+    line-height: 1.6;
+    /* 
+      Increase line spacing between lines of text.
+      Makes paragraphs easier to read.
+    */
+
+    margin-bottom: 2rem;
+    /* Space between main content and footer. */
+}
+
+/* 
+  Style the <small> text inside the <footer>.
+*/
+footer small {
+    opacity: 0.7;
+    /* 
+      Make the text slightly transparent (70% visible).
+      This makes the footer look less prominent than the main content.
+    */
+}
